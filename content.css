@@ -1,0 +1,73 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+   }
+   
+   .card-film {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+   }
+   
+   .card-film:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+   
+   .gambar-film {
+    width: 100%;
+    height: auto;
+   }
+   
+   .deskripsi-film {
+    padding: 10px;
+   }
+   
+   .judul-film {
+    margin: 0;
+    font-size: 1.2em;
+   }
+   
+   .deskripsi {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+   }
+   
+
+   .rating-13 {
+    background-color: blue;
+    color: white;
+    width: 40px;
+    border: 1px;
+    margin: 5px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .rating-17 {
+    background-color: red;
+    color: white;
+    width: 40px;
+    border: 1px;
+    margin: 5px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .rating-su {
+    background-color: green;
+    color: white;
+    width: 40px;
+    border: 1px;
+    margin: 5px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
