@@ -1,0 +1,73 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h1-body {
+    background-color: #364F6B;
+    color: gold;
+    height:10vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: 400;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+}
+.form-body{
+    background-color: #3FC1C9;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 400px; 
+    padding: 20px;
+    background-color: #F5F5F5;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; 
+}  
+input {
+   width: calc(100% - 20px);
+   padding: 10px; 
+   margin-bottom: 10px; 
+}
+.a-login{
+    text-decoration: none;
+    color: black;
+}
+.tombol-kirim{
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+    background-color: lightblue;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.footer{
+    height: 10vh;
+    background-color: #364F6B;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+}
+.a-footer{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.p-footer{
+    font-size: 19px;
+}

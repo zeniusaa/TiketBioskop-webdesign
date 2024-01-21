@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>XXSATU Tiket Bioskop</title>
+      <link rel="stylesheet" href="form.css">
+      <script>
+      function validateAndRedirect() {
+        if (validateForm()) {
+          window.location.href = "landingpage.html";
+        }
+      }
+      </script>
+    </head>
+    <body>
+      <h1 class="h1-body">XXSATU</h1>
+    <div class="form-body">
+      <form onsubmit="return validateForm()" class="form">
+        <label for="nama" class="label-nama">Username :</label>
+        <input type="text" id="nama" name="nama" required class="kotak-nama">
+        <br>
+        <label for="sandi" class="label-sandi" >Sandi :</label>
+        <input type="password" id="sandi" name="sandi" required class="kotak-sandi">
+    
+        <button type="submit" class="tombol-kirim" onclick="validateAndRedirect()"><a href="javascript:void(0)" class="a-login">Login</a></button>
+      </form>
+    </div>
+      <script>
+        function alphabet(input) {
+            return /^[a-zA-Z\s]+$/.test(input);
+          }
+          
+        function alphaNumeric(input) {
+            return /^[a-zA-Z0-9\s]+$/.test(input);
+          }
+        function cekNama(nama) {
+            return alphabet(nama);
+          }
+        function cekPassword(sandi) {
+          if (sandi.length < 6) {
+              return false;
+              }
+            return alphaNumeric(sandi);
+          }
+        function validateForm() {
+
+          var name = document.getElementById("nama").value;
+          var password = document.getElementById("sandi").value;
+    
+          if (!cekNama(name)) {
+            alert("Username hanya untuk huruf saja tanpa angka!");
+            return false;
+          }
+    
+          if (!cekPassword(password)) {
+            alert("Sandi hanya boleh berisi huruf dan angka dan minimal 6 huruf");
+            return false;
+          }
+          return true;
+        }
+      </script>
+      <div class="footer">
+        <a href="#" class="a-footer">Profil</a> | <a href="#" class="a-footer">About Us</a>
+        <p class="p-footer">© 2024 xxsatu.com. Semua materi dan konten (teks, grafik, dan segala atribut) dapat ditemukan di Google.</p>
+      </div>
+    </body>
+    </html>
+    
